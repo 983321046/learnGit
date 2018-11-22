@@ -10,4 +10,9 @@ git add 文件
 git commit -m "本次上传说明"
 git status 查看状态
 git diff 文件名  //查看区别
-测试文件
+
+git reset --hard  head版本号开头几位  指定回到某版本
+git reset --hard head^ 返回上个版本
+cat 文件名  查看详细内容
+git reflog 查看回档记录
+git log 查看更新历史记录
