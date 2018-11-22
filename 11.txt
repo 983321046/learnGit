@@ -1,0 +1,6 @@
+git is a version control system.
+git is free software
+mkdir pp 创建目录 pp
+cd pp 显示pp下的文件
+pwd 展开路径
+git init 创建git 仓库
