@@ -31,6 +31,6 @@ rm file 删除文件（工作区[本地] ）
 git rm file 删除文件(删除暂存区并自动删除工作区[本地]的文件，如果想一并删除版本中的文件 需要重新 git commit -m)
 
 
-$ git remote add 库名 git@github.com:用户名/本地项目文件名称.git  建库
+git remote add 库名 git@github.com:用户名/本地项目文件名称.git  建库
 git push -u 库名 master 初次提交绑定库
 git push 库名 master 后续提交
