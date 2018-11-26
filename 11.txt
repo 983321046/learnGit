@@ -16,3 +16,8 @@ git reset --hard head^ 返回上个版本
 cat 文件名  查看详细内容
 git reflog 查看回档记录
 git log 查看更新历史记录
+
+
+
+
+测试区别（工作区、缓存区、版本分支）
