@@ -11,8 +11,8 @@ git commit -m "本次上传说明"
 git status 监听文件夹状态
 git diff 文件名  //查看区别
 
-git reset --hard  head版本号开头几位  指定回到某版本
-git reset --hard head^ 返回上个版本
+git reset --hard  HEAD版本号开头几位  指定回到某版本
+git reset --hard HEAD^ 返回上个版本
 cat 文件名  查看详细内容
 git reflog 查看回档记录
 git log 查看更新历史记录
@@ -20,12 +20,12 @@ git log 查看更新历史记录
 
 
 
-测试区别（工作区、缓存区、版本分支）
+测试区别（工作区[本地]、缓存区、版本分支）
 git diff --cached 暂存区与版本分支的区别
 git diff HEAD --文件名 工作区和版本分支的区别
 
 
 git checkout --file  还原（版本还原，暂存区还原）
 git reset HEAD file 清除文件的暂存
-rm file 删除文件（工作区 ）
-git rm file 删除文件(暂存区)
+rm file 删除文件（工作区[本地] ）
+git rm file 删除文件(删除暂存区并自动删除工作区[本地]的文件，如果想一并删除版本中的文件 需要重新 git commit -m)
