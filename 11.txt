@@ -8,7 +8,7 @@ git config --global user.name "用户名"
 git congfig --global user.email "邮箱地址"
 git add 文件
 git commit -m "本次上传说明"
-git status 查看状态
+git status 监听文件夹状态
 git diff 文件名  //查看区别
 
 git reset --hard  head版本号开头几位  指定回到某版本
