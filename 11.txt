@@ -21,3 +21,11 @@ git log 查看更新历史记录
 
 
 测试区别（工作区、缓存区、版本分支）
+git diff --cached 暂存区与版本分支的区别
+git diff HEAD --文件名 工作区和版本分支的区别
+
+
+git checkout --file  还原（版本还原，暂存区还原）
+git reset HEAD file 清除文件的暂存
+rm file 删除文件（工作区 ）
+git rm file 删除文件(暂存区)
