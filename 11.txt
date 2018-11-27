@@ -31,6 +31,19 @@ rm file 删除文件（工作区[本地] ）
 git rm file 删除文件(删除暂存区并自动删除工作区[本地]的文件，如果想一并删除版本中的文件 需要重新 git commit -m)
 
 
-git remote add 库名 git@github.com:用户名/本地项目文件名称.git  建库
+git remote add 库名 git@github.com:用户名/远程库.git  建立与远程库的连接 
 git push -u 库名 master 初次提交绑定库
 git push 库名 master 后续提交
+
+git clone git@github.com:用户名/远程库.git 克隆远程库到本地
+
+
+//分支
+git branch //查看分支
+git branch 名称  创建分支
+git checkout 名称 切换分支
+git checkout -b 名称  创建并切换分支
+git merge 分支  合并分支到master
+git branch -d 名称  删除分支
+git log --graph 分支合并图
+git merge --no-off -m "备注" 分支  由于使用--no-off时候会创建新的commit 所以添加备注  --no-off 普通合并模式（可以查看合并的操作者）不添加为 快速合并模式（不能查看谁操作的合并）
