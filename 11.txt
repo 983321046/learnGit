@@ -46,4 +46,4 @@ git checkout -b 名称  创建并切换分支
 git merge 分支  合并分支到master
 git branch -d 名称  删除分支
 git log --graph 分支合并图
-git merge --no-off -m "备注" 分支  由于使用--no-off时候会创建新的commit 所以添加备注  --no-off 普通合并模式（可以查看合并的操作者）不添加为 快速合并模式（不能查看谁操作的合并）
+git merge --no-ff -m "备注" 分支  由于使用--no-off时候会创建新的commit 所以添加备注  --no-off 普通合并模式（可以查看合并的操作者）不添加为 快速合并模式（不能查看谁操作的合并）
