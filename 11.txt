@@ -1,7 +1,7 @@
 git is a version control system.
 git is free software
 mkdir pp 创建目录 pp
-cd pp 显示pp下的文件
+cd pp 切换至pp并显示pp下的文件
 pwd 展开路径
 git init 创建git 仓库
 git config --global user.name "用户名"
