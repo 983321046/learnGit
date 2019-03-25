@@ -1,9 +1,9 @@
 git is a version control system.
 git is free software
-mkdir pp 创建目录 pp
-cd pp 切换至pp并显示pp下的文件
-pwd 展开路径
-git init 创建git 仓库
+mkdir pp //创建目录 pp
+cd pp //切换至pp并显示pp下的文件
+pwd //展开路径
+git init //创建git 仓库
 git config --global user.name "用户名"
 git congfig --global user.email "邮箱地址"
 git add 文件
@@ -11,66 +11,67 @@ git commit -m "本次上传说明"
 git status 监听文件夹状态
 git diff 文件名  //查看区别
 
-git reset --hard  HEAD版本号开头几位  指定回到某版本
-git reset --hard HEAD^ 返回上个版本
-cat 文件名  查看详细内容
-git reflog 查看回档记录
-git log 查看更新历史记录
+git reset --hard  HEAD版本号开头几位  //指定回到某版本
+git reset --hard HEAD^ //返回上个版本
+cat 文件名  //查看详细内容
+git reflog //查看回档记录
+git log //查看更新历史记录
 
 
 
 
 测试区别（工作区[本地]、缓存区、版本分支）
-git diff --cached 暂存区与版本分支的区别
-git diff HEAD --文件名 工作区和版本分支的区别
+git diff --cached //暂存区与版本分支的区别
+git diff HEAD --文件名 //工作区和版本分支的区别
 
 
-git checkout --file  还原（版本还原，暂存区还原）
-git reset HEAD file 清除文件的暂存
-rm file 删除文件（工作区[本地] ）
-git rm file 删除文件(删除暂存区并自动删除工作区[本地]的文件，如果想一并删除版本中的文件 需要重新 git commit -m)
+git checkout --file  //还原（版本还原，暂存区还原）
+git reset HEAD file //清除文件的暂存
+rm file //删除文件（工作区[本地] ）
+git rm file //删除文件(删除暂存区并自动删除工作区[本地]的文件，如果想一并删除版本中的文件 需要重新 git commit -m)
 
 
-git remote add 远程仓库名 git@github.com:用户名/远程库项目.git  建立与远程仓库对应项目的连接 
-git push -u 远程仓库名 master 初次提交绑定库
-git push 远程仓库名 分支名称 提交到对应分支
+git remote add 远程仓库名 git@github.com:用户名/远程库项目.git  //建立与远程仓库对应项目的连接 
+git push -u 远程仓库名 master //初次提交绑定库
+git push 远程仓库名 分支名称 //提交到对应分支
 
-git clone git@github.com:用户名/远程库.git 克隆远程库到本地
+git clone git@github.com:用户名/远程库.git //克隆远程库到本地
 
 
 //分支
 git branch //查看分支
-git branch 名称  创建分支
-git checkout 名称 切换分支
-git checkout -b 名称  创建并切换分支
-git merge 分支  合并分支到master
-git branch -d 名称  删除分支
-git branch -D 名称  强制删除分支
-git log --graph 分支合并图
+git branch -r //查看所有分支
+git branch 名称  //创建分支
+git checkout 名称 //切换分支
+git checkout -b 名称  //创建并切换分支
+git merge 分支  //合并分支到master
+git branch -d 名称  //删除分支
+git branch -D 名称  //强制删除分支
+git log --graph //分支合并图
 git merge --no-ff -m "备注" 分支  由于使用--no-off时候会创建新的commit 所以添加备注  --no-off 普通合并模式（可以查看合并的操作者）不添加为 快速合并模式（不能查看谁操作的合并）
 
 
-git stash 暂存文件修改
-git stash apply 暂存文件恢复
-git stash drop 暂存文件删除
-git stash pop 暂存文件并删除
+git stash //暂存文件修改
+git stash apply //暂存文件恢复
+git stash drop //暂存文件删除
+git stash pop //暂存文件并删除
 
 
-git remote 查看远程库
-git remote -v 查看远程库详细信息
+git remote //查看远程库
+git remote -v //查看远程库详细信息
 
 
-git pull 拉取远程库的内容
+git pull //拉取远程库的内容
 
 //标签
-git tag name 创建名为name的标签
-git tag name 版本    給某commit版本添加名为name 的标签
-git tag 查看标签
-git show name  显示标签信息
-git tag -a 版本 -m "描述" 添加版本和说明文字
+git tag name //创建名为name的标签
+git tag name 版本    //給某commit版本添加名为name 的标签
+git tag //查看标签
+git show name  //显示标签信息
+git tag -a 版本 -m "描述" //添加版本和说明文字
 
-git tag -d name 删除标签
+git tag -d name //删除标签
 
-git push origin name 推送标签到远程
-git push origin --tags 推送所有标签到远程
-git push origin :refs/tags/版本  推送本地删除的标签到远程
+git push origin name //推送标签到远程
+git push origin --tags //推送所有标签到远程
+git push origin :refs/tags/版本  //推送本地删除的标签到远程
